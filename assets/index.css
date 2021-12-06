@@ -33,6 +33,11 @@ main {
   margin: 0 auto;
 }
 
+.container > div.video_toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
 .movie {
   width: 100%;
 }

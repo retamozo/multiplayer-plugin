@@ -1,7 +1,7 @@
 class AutoPlay {
-
     run(player) {
-        console.log(player)
+        player.mute()
+        player.play()
     }
 }
 
