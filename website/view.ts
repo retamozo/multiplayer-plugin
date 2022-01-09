@@ -1,8 +1,10 @@
-//TODO investigate why this get breaks without the .ts suffix
-import AutoPlay from "../plugins/AutoPlay";
-import MediaPlayer from "./MediaPlayer";
-import AutoPause from "../plugins/AutoPause";
-import Ads from "../plugins/Ads";
+
+import Ads from "@retamozo/pluginsmediaplayer/lib/plugins/Ads"
+import AutoPause from "@retamozo/pluginsmediaplayer/lib/plugins/AutoPause"
+import AutoPlay from "@retamozo/pluginsmediaplayer/lib/plugins/AutoPlay"
+import MediaPlayer from "@retamozo/pluginsmediaplayer"
+
+
 
 const videoEl = document.querySelector("video");
 const play = document.getElementById("play_pause");

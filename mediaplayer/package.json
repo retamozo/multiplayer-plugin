@@ -1,0 +1,16 @@
+{
+  "name": "@retamozo/pluginsmediaplayer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/src/MediaPlayer.js",
+  "scripts": {
+    "build": "tsc src/*.ts plugins/* plugins/Ads/*.ts plugins/*.ts --outdir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}

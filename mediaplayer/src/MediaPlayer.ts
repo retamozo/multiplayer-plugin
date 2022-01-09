@@ -48,7 +48,6 @@ class MediaPlayer {
   private initPlugins() {
     if (!!this.plugins.length) {
       this.plugins.forEach((plugin) => {
-        console.log("this ", this);
         plugin.run(this);
       });
     }
