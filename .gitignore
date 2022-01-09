@@ -19,6 +19,5 @@ bin-release/
 node_modules
 package-lock.json
 
-# parcel
 dist
 .cache

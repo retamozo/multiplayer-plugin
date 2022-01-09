@@ -1,11 +1,22 @@
 class MediaPlayer {
   media: HTMLMediaElement
   private plugins: Array<{ run: Function }>
+  container: HTMLElement;
+
   constructor(config: { el: HTMLMediaElement, plugins: Array<{ run: Function }> }) {
     this.media = config.el;
     this.plugins = config.plugins || [];
+    this.initPlayer()
     this.initPlugins();
   }
+
+  initPlayer() {
+    this.container = document.createElement("div");
+    this.container.style.position = "relative"
+    this.media.parentNode.insertBefore(this.container, this.media);
+    this.container.appendChild(this.media)
+  }
+
   play() {
     this.media.play();
   }
@@ -37,6 +48,7 @@ class MediaPlayer {
   private initPlugins() {
     if (!!this.plugins.length) {
       this.plugins.forEach((plugin) => {
+        console.log("this ", this);
         plugin.run(this);
       });
     }
